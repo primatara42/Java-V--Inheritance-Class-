@@ -6,4 +6,10 @@ class Bicycle extends Vehicle
     {
         super(name, color);
     }
+
+    public void run(int distance) {
+        System.out.println("Bergerak " + distance + "km ...");
+        this.distance += distance;
+        System.out.println("Jarak: " + this.distance + "km");
+    }
 }
