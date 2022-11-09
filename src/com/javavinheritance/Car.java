@@ -14,9 +14,7 @@ class Car extends Vehicle
     //Definisikan method printData dari superclass Vehicle
     public void printData()
     {
-        System.out.println("Nama: " + getName());
-        System.out.println("Warna: " + getColor());
-        System.out.println("Jarak: " + getDistance() + "km");
+        super.printData();
         System.out.println("Bahan Bakar: " + getFuel());
     }
 
