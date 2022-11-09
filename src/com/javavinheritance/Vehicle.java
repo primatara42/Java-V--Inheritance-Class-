@@ -2,6 +2,12 @@ package com.javavinheritance;
 
 class Vehicle
 {
+    Vehicle(String name, String color)
+    {
+        this.name = name;
+        this.color = color;
+    }
+
     private String name;
     private String color;
     private int distance = 0;

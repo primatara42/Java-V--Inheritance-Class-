@@ -2,6 +2,12 @@ package com.javavinheritance;
 
 class Car extends Vehicle
 {
+    Car(String name, String color)
+    {
+        super(name, color);
+    }
+
+
     // Deklarasikan field instance `fuel`
     private int fuel = 50;
 
