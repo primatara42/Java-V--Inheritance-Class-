@@ -1,6 +1,6 @@
 package com.javavinheritance;
 
-public class Bicycle extends Vehicle
+class Bicycle extends Vehicle
 {
 
 }

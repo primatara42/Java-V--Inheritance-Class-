@@ -1,24 +1,29 @@
 package com.javavinheritance;
 
-public class Main {
-    public static void main(String[] args)
-    {
+import java.util.Scanner;
+
+class Main
+{
+        public static void main(String[] args)
+        {
+        Scanner scanner = new Scanner(System.in);
         Car car = new Car();
-        // Atur nama mobil menjadi "Ferrari" menggunakan method `setName`
         car.setName("Ferrari");
-
-        // Atur warna dari mobil menjadi "Merah" menggunakan method `setColor`
         car.setColor("Merah");
-
         Bicycle bicycle = new Bicycle();
-        // Atur nama dari sepeda menjadi "Bianchi" menggunakan method `setName`
         bicycle.setName("Bianchi");
-
-        // Atur warna dari sepeda menjadi "Hijau" menggunakan method `setColor`
         bicycle.setColor("Hijau");
 
         System.out.println("【Info Mobil】");
         car.printData();
+        // Output "Bahan Bakar: ____L" menggunakan method instance `getFuel`
+        System.out.println("Bahan Bakar: " + car.getFuel() + "L");
+
+        System.out.println("-----------------");
+        System.out.print("Masukkan jumlah isi ulang bahan bakar: ");
+        int litre = scanner.nextInt();
+        // Memanggil method instance `charge` dan berikan `litre` sebagai argument
+        car.charge(litre);
 
         System.out.println("=================");
         System.out.println("【Info Sepeda】");
