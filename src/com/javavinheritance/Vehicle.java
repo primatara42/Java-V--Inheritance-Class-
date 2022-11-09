@@ -1,6 +1,6 @@
 package com.javavinheritance;
 
-class Vehicle
+abstract class Vehicle
 {
     private String name;
     private String color;
@@ -32,4 +32,6 @@ class Vehicle
         System.out.println("Warna: " + this.color);
         System.out.println("Jarak: " + this.distance + "km");
     }
+
+    abstract void run(int distance);
 }
