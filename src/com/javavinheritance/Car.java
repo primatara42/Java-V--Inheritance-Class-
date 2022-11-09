@@ -11,6 +11,15 @@ class Car extends Vehicle
         return this.fuel;
     }
 
+    //Definisikan method printData dari superclass Vehicle
+    public void printData()
+    {
+        System.out.println("Nama: " + getName());
+        System.out.println("Warna: " + getColor());
+        System.out.println("Jarak: " + getDistance() + "km");
+        System.out.println("Bahan Bakar: " + getFuel());
+    }
+
     // Definisikan method instance `charge`
     public void charge(int litre)
     {

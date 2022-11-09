@@ -16,8 +16,6 @@ class Main
 
         System.out.println("【Info Mobil】");
         car.printData();
-        // Output "Bahan Bakar: ____L" menggunakan method instance `getFuel`
-        System.out.println("Bahan Bakar: " + car.getFuel() + "L");
 
         System.out.println("-----------------");
         System.out.print("Masukkan jumlah isi ulang bahan bakar: ");
