@@ -23,7 +23,7 @@ class Car extends Vehicle
             this.distance += distance;
             this.fuel -= distance;
         } else {
-            System.out.println("Bahan bakar tidak cukup");
+            System.out.println("Bahan bakar tidak mencukupi");
         }
         System.out.println("Jarak: " + this.distance + "km");
         System.out.println("Bahan Bakar: " + this.fuel + "L");
