@@ -40,9 +40,9 @@ abstract class Vehicle
     }
 
     // Definisikan setter untuk field `owner`
-    public void setOwner(Person person)
+    public void setOwner(Person owner)
     {
-        this.owner = person;
+        this.owner = owner;
     }
 
     public void printData()

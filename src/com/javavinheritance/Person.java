@@ -52,14 +52,8 @@ public class Person
     }
 
     //Menambahkan method buy car
-    public void buy(Car car)
+    public void buy(Vehicle vehicle)
     {
-        car.setOwner(this);
-    }
-
-    //Menambahkan method buy bicycle
-    public void buy(Bicycle bicycle)
-    {
-        bicycle.setOwner(this);
+        vehicle.setOwner(this);
     }
 }
