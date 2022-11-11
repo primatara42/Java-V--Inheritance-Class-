@@ -29,10 +29,13 @@ abstract class Vehicle
         return this.owner;
     }
 
-    public void setName(String name) {
+    public void setName(String name)
+    {
         this.name = name;
     }
-    public void setColor(String color) {
+
+    public void setColor(String color)
+    {
         this.color = color;
     }
 
@@ -42,7 +45,8 @@ abstract class Vehicle
         this.owner = person;
     }
 
-    public void printData() {
+    public void printData()
+    {
         System.out.println("Nama: " + this.name);
         System.out.println("Warna: " + this.color);
         System.out.println("Jarak: " + this.distance + "km");

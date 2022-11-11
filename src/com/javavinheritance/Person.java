@@ -9,7 +9,8 @@ public class Person
     private double height;
     private double weight;
 
-    Person(String firstName, String lastName, int age, double height, double weight) {
+    Person(String firstName, String lastName, int age, double height, double weight)
+    {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
@@ -17,20 +18,27 @@ public class Person
         this.weight = weight;
     }
 
-    Person(String firstName, String middleName, String lastName, int age, double height, double weight) {
+    Person(String firstName, String middleName, String lastName, int age, double height, double weight)
+    {
         this(firstName, lastName, age, height, weight);
         this.middleName = middleName;
     }
 
-    public String fullName() {
-        if (this.middleName == null) {
+    public String fullName()
+    {
+        if (this.middleName == null)
+        {
             return this.firstName + " " + this.lastName;
-        } else {
+        }
+
+        else
+        {
             return this.firstName + " " + this.middleName + " " + this.lastName;
         }
     }
 
-    public void printData() {
+    public void printData()
+    {
         System.out.println("Nama saya adalah " + this.fullName() + ".");
         System.out.println("Saya berusia " + this.age + " tahun.");
         System.out.println("Tinggi Badan saya " + this.height + "m.");
@@ -38,7 +46,20 @@ public class Person
         System.out.println("Nilai BMI saya " + Math.round(this.bmi()) + ".");
     }
 
-    public double bmi() {
+    public double bmi()
+    {
         return this.weight / this.height / this.height;
+    }
+
+    //Menambahkan method buy car
+    public void buy(Car car)
+    {
+        car.setOwner(this);
+    }
+
+    //Menambahkan method buy bicycle
+    public void buy(Bicycle bicycle)
+    {
+        bicycle.setOwner(this);
     }
 }

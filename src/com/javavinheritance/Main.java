@@ -10,12 +10,12 @@ class Main
                 Person person2 = new Person("Yahya", "Nasrun", "Rizal", 65, 1.75, 80.0);
 
                 Car car = new Car("Ferrari", "Merah");
-                // Atur `owner` dari `car` menjadi `person1` menggunakan method instance `setOwner`
-                car.setOwner(person1);
+                // Atur instance person1 dapat membeli instance car
+                person1.buy(car);
 
                 Bicycle bicycle = new Bicycle("Bianchi", "Hijau");
-                // Atur `owner` dari `bicycle` menjadi `person2` menggunakan method instance `setOwner`
-                bicycle.setOwner(person2);
+                // Atur instance person2 dapat membeli instance bicycle
+                person2.buy(bicycle);
 
                 System.out.println("【Info Mobil】");
                 car.printData();
